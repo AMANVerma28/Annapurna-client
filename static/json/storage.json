@@ -1,1 +1,1 @@
-[{"SID": 1, "owner_name": "Daud Ibrahim", "location": {"type": "Point", "coordinates": [79.04876326428015, 13.544035113591406]}, "depth": 60000.0}]
+[{"SID": 1, "owner_name": "Karan Gupta", "location": {"type": "Point", "coordinates": [79.05477141247536, 13.54224106607746]}, "capacity": 60000.0, "image": "/media/Storage_photo/sp1_WcVY1ja.JPG"}, {"SID": 2, "owner_name": "Arjun Yadav", "location": {"type": "Point", "coordinates": [79.05262564526338, 13.544494053805206]}, "capacity": 75000.0, "image": "/media/Storage_photo/sp2_IW1yHkx.jpg"}]
