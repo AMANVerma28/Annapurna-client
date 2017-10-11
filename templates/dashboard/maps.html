@@ -208,12 +208,22 @@ function setMap(position) {
     var marker
     
       for (row in data){
-        var house_icon = {
-          url:"../../static/img/house.ico", 
-          scaledSize: new google.maps.Size(10*data[row].number_of_member, 10*data[row].number_of_member), 
-          origin: new google.maps.Point(0,0), 
-          anchor: new google.maps.Point(0, 0)
-        };
+        if (data[row].monthly_income<30000){
+          var house_icon = {
+            url:"../../static/img/house1.png", 
+            scaledSize: new google.maps.Size(5*data[row].number_of_member, 5*data[row].number_of_member), 
+            origin: new google.maps.Point(0,0), 
+            anchor: new google.maps.Point(0, 0)
+          };
+        }
+        if (data[row].monthly_income>=30000){
+          var house_icon = {
+            url:"../../static/img/house1.png", 
+            scaledSize: new google.maps.Size(5*data[row].number_of_member, 5*data[row].number_of_member), 
+            origin: new google.maps.Point(0,0), 
+            anchor: new google.maps.Point(0, 0)
+          };
+        }
         marker = new google.maps.Marker({
           position: new google.maps.LatLng(data[row].location.coordinates[1], data[row].location.coordinates[0]),
           icon:house_icon,
