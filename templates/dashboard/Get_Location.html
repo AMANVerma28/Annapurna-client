@@ -17,13 +17,13 @@ function getLocation() {
 
 function showPosition(position) {
 
-    window.location = "http://127.0.0.1:8001/index/";
+    window.location = "http://10.0.3.23:2468/index/";
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
 }
 
 function showError(error) {
-    window.location = "http://127.0.0.1:8001/index/";
+    window.location = "http://10.0.3.23:2468/index/";
     switch(error.code) {
         case error.PERMISSION_DENIED:
             x.innerHTML = "User denied the request for Geolocation."
