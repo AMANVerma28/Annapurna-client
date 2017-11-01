@@ -31,20 +31,6 @@ $.getJSON( "../../static/json/well.json", function( data ) {
 		imageryProvider : Cesium.createOpenStreetMapImageryProvider({
 			url : 'https://a.tile.openstreetmap.org/'
 		}),
-		// Use high-res stars downloaded from https://github.com/AnalyticalGraphicsInc/cesium-assets
-		/*
-		skyBox : new Cesium.SkyBox({
-			sources : {
-			  positiveX : 'stars/TychoSkymapII.t3_08192x04096_80_px.jpg',
-			  negativeX : 'stars/TychoSkymapII.t3_08192x04096_80_mx.jpg',
-			  positiveY : 'stars/TychoSkymapII.t3_08192x04096_80_py.jpg',
-			  negativeY : 'stars/TychoSkymapII.t3_08192x04096_80_my.jpg',
-			  positiveZ : 'stars/TychoSkymapII.t3_08192x04096_80_pz.jpg',
-			  negativeZ : 'stars/TychoSkymapII.t3_08192x04096_80_mz.jpg'
-			}
-		}),*/
-		// Show Columbus View map with Web Mercator projection
-		
 	});
 	//Add basic drag and drop functionality
 	viewer.extend(Cesium.viewerDragDropMixin);
