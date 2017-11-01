@@ -27,12 +27,12 @@
 <script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
 
 <script type="text/javascript">
-	$(document).ready(function(e) {
+  $(document).ready(function(e) {
         $('.res-nav_click').click(function(){
-		$('ul.toggle').slideToggle(600)	
-			});	
-			
-	$(document).ready(function() {
+    $('ul.toggle').slideToggle(600) 
+      }); 
+      
+  $(document).ready(function() {
 $(window).bind('scroll', function() {
          if ($(window).scrollTop() > 0) {
              $('#header_outer').addClass('fixed');
@@ -41,18 +41,18 @@ $(window).bind('scroll', function() {
              $('#header_outer').removeClass('fixed');
          }
     });
-	
-	  });
-	  
+  
+    });
+    
 
-		    });	
+        }); 
 function resizeText() {
-	var preferredWidth = 767;
-	var displayWidth = window.innerWidth;
-	var percentage = displayWidth / preferredWidth;
-	var fontsizetitle = 25;
-	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-	$(".divclass").css("font-size", newFontSizeTitle)
+  var preferredWidth = 767;
+  var displayWidth = window.innerWidth;
+  var percentage = displayWidth / preferredWidth;
+  var fontsizetitle = 25;
+  var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+  $(".divclass").css("font-size", newFontSizeTitle)
 }
 </script>
 </head>
@@ -67,6 +67,15 @@ function resizeText() {
         <ul class="toggle">
           <li><a href="#top_content">Home</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#Portfolio">Statistics</a></li>
+          <li><a href="#client_outer">Clients</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="">
+          <li><a href="#top_content">Home</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#work_outer">News</a></li>
           <li><a href="#Portfolio">Statistics</a></li>
           <li><a href="#client_outer">Clients</a></li>
           <li><a href="#team">Team</a></li>
@@ -108,7 +117,7 @@ function resizeText() {
       <div class="row">
         <div class="col-lg-4">
           <div class="service_block">
-          	<a href="http://10.0.3.23:2468/maps">
+            <a href="http://10.0.3.23:2468/maps">
             <div class="service_icon delay-03s animated wow  zoomIn"><span><i class="fa-map-marker"></i></span></div></a>
             <h3 class="animated fadeInUp wow"><a href="http://10.0.3.23:2468/maps">Maps</a></h3>
             <p class="animated fadeInDown wow">Shows Farms and household details in an area yearwise .Usefull to observe the yearwise trends of sesons alongwith diffrent crops sown by a farmer in a particular season</p>
@@ -207,7 +216,7 @@ function resizeText() {
         <div class="portfolio-image"> <img src="{% static 'img/portfolio_pic2.jpg' %}" alt="Portfolio 1"> </div>
         <a class="open-project" href="http://agri-insurance.gov.in/" title="Open Project">
           <div class="project-overlay">
-          <div class="open-project-link"></div>	
+          <div class="open-project-link"></div> 
           <div class="project-info">
             <div class="zoom-icon"></div>
             <h4 class="project-name">Insurance</h4>
@@ -544,30 +553,30 @@ function resizeText() {
     document.getElementById('').onclick = function() {
       var section = document.createElement('section');
       section.className = 'wow fadeInDown';
-	  section.className = 'wow shake';
-	  section.className = 'wow zoomIn';
-	  section.className = 'wow lightSpeedIn';
+    section.className = 'wow shake';
+    section.className = 'wow zoomIn';
+    section.className = 'wow lightSpeedIn';
       this.parentNode.insertBefore(section, this);
     };
   </script> 
 <script type="text/javascript">
-	$(window).load(function(){
-		
-		$('a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 91
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
+  $(window).load(function(){
+    
+    $('a').bind('click',function(event){
+      var $anchor = $(this);
+      
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 91
+      }, 1500,'easeInOutExpo');
+      /*
+      if you don't want to use the easing effects:
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+      }, 1000);
+      */
+      event.preventDefault();
+    });
+  })
 </script> 
 
 <script type="text/javascript">
@@ -575,76 +584,76 @@ function resizeText() {
    
   jQuery(document).ready(function($){     
 // Portfolio Isotope
-	var container = $('#portfolio-wrap');	
-	
+  var container = $('#portfolio-wrap'); 
+  
 
-	container.isotope({
-		animationEngine : 'best-available',
-	  	animationOptions: {
-	     	duration: 200,
-	     	queue: false
-	   	},
-		layoutMode: 'fitRows'
-	});	
+  container.isotope({
+    animationEngine : 'best-available',
+      animationOptions: {
+        duration: 200,
+        queue: false
+      },
+    layoutMode: 'fitRows'
+  }); 
 
-	$('#filters a').click(function(){
-		$('#filters a').removeClass('active');
-		$(this).addClass('active');
-		var selector = $(this).attr('data-filter');
-	  	container.isotope({ filter: selector });
-        setProjects();		
-	  	return false;
-	});
-		
-		
-		function splitColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = 1;
-			
-			
-			if (winWidth > 1024) {
-				columnNumb = 4;
-			} else if (winWidth > 900) {
-				columnNumb = 2;
-			} else if (winWidth > 479) {
-				columnNumb = 2;
-			} else if (winWidth < 479) {
-				columnNumb = 1;
-			}
-			
-			return columnNumb;
-		}		
-		
-		function setColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = splitColumns(), 
-				postWidth = Math.floor(winWidth / columnNumb);
-			
-			container.find('.portfolio-item').each(function () { 
-				$(this).css( { 
-					width : postWidth + 'px' 
-				});
-			});
-		}		
-		
-		function setProjects() { 
-			setColumns();
-			container.isotope('reLayout');
-		}		
-		
-		container.imagesLoaded(function () { 
-			setColumns();
-		});
-		
-	
-		$(window).bind('resize', function () { 
-			setProjects();			
-		});
+  $('#filters a').click(function(){
+    $('#filters a').removeClass('active');
+    $(this).addClass('active');
+    var selector = $(this).attr('data-filter');
+      container.isotope({ filter: selector });
+        setProjects();    
+      return false;
+  });
+    
+    
+    function splitColumns() { 
+      var winWidth = $(window).width(), 
+        columnNumb = 1;
+      
+      
+      if (winWidth > 1024) {
+        columnNumb = 4;
+      } else if (winWidth > 900) {
+        columnNumb = 2;
+      } else if (winWidth > 479) {
+        columnNumb = 2;
+      } else if (winWidth < 479) {
+        columnNumb = 1;
+      }
+      
+      return columnNumb;
+    }   
+    
+    function setColumns() { 
+      var winWidth = $(window).width(), 
+        columnNumb = splitColumns(), 
+        postWidth = Math.floor(winWidth / columnNumb);
+      
+      container.find('.portfolio-item').each(function () { 
+        $(this).css( { 
+          width : postWidth + 'px' 
+        });
+      });
+    }   
+    
+    function setProjects() { 
+      setColumns();
+      container.isotope('reLayout');
+    }   
+    
+    container.imagesLoaded(function () { 
+      setColumns();
+    });
+    
+  
+    $(window).bind('resize', function () { 
+      setProjects();      
+    });
 
 });
 $( window ).load(function() {
-	jQuery('#all').click();
-	return false;
+  jQuery('#all').click();
+  return false;
 });
 </script>
 <script src="contactform/contactform.js"></script>
