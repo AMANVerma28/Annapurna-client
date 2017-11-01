@@ -91,7 +91,6 @@
     <div class="row ">
       <div class="card ">
         <div id="map" style="width:100%;height:800px;"class="col-sm-12"></div>
-        <div id="legend"><h3>Legend</h3></div>
         <div class="footer">
           <div class="legend"></div>
           <div id="slidecontainer" >
@@ -106,6 +105,7 @@
         </div>
       </div>
     </div>
+<div id="legend"><h3>Legend</h3></div>
   </div>
 </div>
 </body>
@@ -244,7 +244,7 @@ function setMap(position) {
         });
         google.maps.event.addListener(marker, 'mouseover', (function(marker, row) {
           return function() {
-            infowindow.setContent("<b>members : </b>"+data[row].number_of_member+ "<br><br>"+"<b>income :</b> "+data[row].monthly_income+ "<br><br>" +'<img src="http://10.0.3.23:2469'+data[row].image+'">');
+            infowindow.setContent("<b>Owner : </b>"+data[row].owner_name + "<b>members : </b>"+data[row].number_of_member+ "<br><br>"+"<b>income :</b> "+data[row].monthly_income+ "<br><br>" +'<img src="http://10.0.3.23:2469'+data[row].image+'">');
             infowindow.open(map, marker);
           }
         }
@@ -333,19 +333,19 @@ function setMap(position) {
         var icons = {
           House1: {
             name: 'Household(<30k)',
-            icon: iconBase + 'house1.png'
+            icon: iconBase + 'house11.png'
           },
           House2: {
             name: 'Household(>=30k)',
-            icon: iconBase + 'house2.png'
+            icon: iconBase + 'house21.png'
           },
           Well: {
             name: 'Well',
-            icon: iconBase + 'dug_well.png'
+            icon: iconBase + 'dug_well1.png'
           },
           Storage: {
             name: 'Cold Storage',
-            icon: iconBase + 'godown.png'
+            icon: iconBase + 'godown1.png'
           }
         };
   var legend = document.getElementById('legend');
