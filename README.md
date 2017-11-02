@@ -1,6 +1,6 @@
 # itsclient
 
-Run the client on "http://10.0.3.23:2468" on IIITS Server.
+Run the client on "http://https://annapurnahelps.herokuapp.com" on IIITS Server.
 
 To run on IIITS Server follow the given procedure.
 1. Login into "10.0.3.23" container.
@@ -8,4 +8,4 @@ To run on IIITS Server follow the given procedure.
 3. Run "source env/bin/activate" to activate virtual environment.
 4. Run "cd itsclient/" to enter into client directory.
 5. Run "python3 manage.py runserver 0:2468" to start the server.
-6. Visit "10.0.3.23:2468" on your browser.
+6. Visit "https://annapurnahelps.herokuapp.com" on your browser.

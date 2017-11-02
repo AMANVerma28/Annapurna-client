@@ -12,28 +12,28 @@ from django.http import Http404,HttpRequest
 #Home paga requests data of each model from server.
 def index(request):
     data = coreapi.Client()
-    schema = data.get("http://10.0.3.23:2469/household")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/household")
     with open('static/json/household.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/farm")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/farm")
     with open('static/json/farm.json', 'w') as outfile:
 	    json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/well")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/well")
     with open('static/json/well.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/member")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/member")
     with open('static/json/member.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/season")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/season")
     with open('static/json/season.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/crop")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/crop")
     with open('static/json/crop.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/storage")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/storage")
     with open('static/json/storage.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/yield")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/yield")
     with open('static/json/yield.json', 'w') as outfile:
         json.dump(schema, outfile)
     return render(request,'dashboard/index.html')   
@@ -42,10 +42,10 @@ def index(request):
 #It requests data of just season and crop models as it doesn't need others.
 def showcharts(request):
     data = coreapi.Client()
-    schema = data.get("http://10.0.3.23:2469/season")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/season")
     with open('static/json/season.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/crop")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/crop")
     with open('static/json/crop.json', 'w') as outfile:
         json.dump(schema, outfile)
     return render(request,'dashboard/charts.html')
@@ -54,22 +54,22 @@ def showcharts(request):
 #It requests data of all models except yield as it doesn't need it.
 def showmaps(request):
     data = coreapi.Client()
-    schema = data.get("http://10.0.3.23:2469/household")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/household")
     with open('static/json/household.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/farm")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/farm")
     with open('static/json/farm.json', 'w') as outfile:
 	    json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/well")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/well")
     with open('static/json/well.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/season")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/season")
     with open('static/json/season.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/crop")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/crop")
     with open('static/json/crop.json', 'w') as outfile:
         json.dump(schema, outfile)
-    schema = data.get("http://10.0.3.23:2469/storage")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/storage")
     with open('static/json/storage.json', 'w') as outfile:
         json.dump(schema, outfile)
     return render(request,'dashboard/maps.html')
@@ -78,7 +78,7 @@ def showmaps(request):
 #It requests data of just well model as it doesn't need others.
 def showwells(request):
     data = coreapi.Client()
-    schema = data.get("http://10.0.3.23:2469/well")
+    schema = data.get("http://https://itsproject-server.herokuapp.com/well")
     with open('static/json/well.json', 'w') as outfile:
         json.dump(schema, outfile)
     return render(request,'dashboard/wells.html')

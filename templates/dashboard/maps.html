@@ -244,7 +244,7 @@ function setMap(position) {
         });
         google.maps.event.addListener(marker, 'mouseover', (function(marker, row) {
           return function() {
-            infowindow.setContent("<b>Owner : </b>"+data[row].owner_name + "<b>members : </b>"+data[row].number_of_member+ "<br><br>"+"<b>income :</b> "+data[row].monthly_income+ "<br><br>" +'<img src="http://10.0.3.23:2469'+data[row].image+'">');
+            infowindow.setContent("<b>Owner : </b>"+data[row].owner_name + "<b>members : </b>"+data[row].number_of_member+ "<br><br>"+"<b>income :</b> "+data[row].monthly_income+ "<br><br>" +'<img src="http://https://itsproject-server.herokuapp.com'+data[row].image+'">');
             infowindow.open(map, marker);
           }
         }
@@ -269,7 +269,7 @@ function setMap(position) {
             });
             google.maps.event.addListener(marker, 'mouseover', (function(marker,row) {
               return function() {
-              infowindow.setContent("<b>Depth : </b>"+data[row].depth+"<br> <br>"+" <b>Yield :</b> "+ data[row].average_yield+ "<br><br>" +'<img src="http://10.0.3.23:2469'+data[row].image+'">');
+              infowindow.setContent("<b>Depth : </b>"+data[row].depth+"<br> <br>"+" <b>Yield :</b> "+ data[row].average_yield+ "<br><br>" +'<img src="http://https://itsproject-server.herokuapp.com'+data[row].image+'">');
               infowindow.open(map, marker);
               }
             }
@@ -294,7 +294,7 @@ function setMap(position) {
             });
             google.maps.event.addListener(marker, 'mouseover', (function(marker,row) {
               return function() {
-              infowindow.setContent("<b>Owner : </b>"+data[row].owner_name+"<br> <br>"+"<b>Capacity : </b>"+data[row].capacity+"Kg"+"<br> <br>"+'<img src="http://10.0.3.23:2469'+data[row].image+'">');
+              infowindow.setContent("<b>Owner : </b>"+data[row].owner_name+"<br> <br>"+"<b>Capacity : </b>"+data[row].capacity+"Kg"+"<br> <br>"+'<img src="http://https://itsproject-server.herokuapp.com'+data[row].image+'">');
               infowindow.open(map, marker);
               }
             }
