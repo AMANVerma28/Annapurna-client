@@ -20,6 +20,7 @@ MarkupSafe==1.0
 numpy==1.13.3
 olefile==0.44
 Pillow==4.2.1
+psycopg2
 Pygments==2.2.0
 pytz==2017.2
 requests==2.18.4
