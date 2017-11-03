@@ -77,6 +77,23 @@
     </div>
   </div>
 </div>
+
+<div  class="content" style="z-index:-1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" >
+        <div class="card " >
+          <div class="header">
+            <h4>Household Analytics</h4>
+          </div>
+          <div class="content">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 <script src="{% static 'js/jquery.min.js' %}"></script>  
 <script>
@@ -90,7 +107,6 @@
     }
 </script>
 <script type="text/javascript">
-    type = ['','info','success','warning','danger'];
 demo = {
   initPickColor: function(){
     $('.pick-class-label').click(function(){
@@ -164,6 +180,27 @@ demo = {
     };
   },
 }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript">
+  var ctx = document.getElementById("myChart").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["10k-20k", "20k-30k", "30k-40k", "40k-50k", "50k-60k", "60k-70k"],
+        datasets: [{
+            label: 'Catagory of income',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
+        }
+    }
+  });
 </script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
