@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Statistics and Analytics</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <!-- Plotly chart will be drawn inside this DIV -->
+  <div id="myDiv"></div>
+  <script>
+    /* JAVASCRIPT CODE GOES HERE */
+    Plotly.d3.csv("../../static/data/rates.csv", function(err, rows){
+
+      function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+      }
+
+      var trace1 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Rates 02-03',
+        x: unpack(rows, 'Commodities'),
+        y: unpack(rows, '2002-03'),
+        line: {color: '#17BECF'}
+      }
+
+      var trace2 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Rates 04-05',
+        x: unpack(rows, 'Commodities'),
+        y: unpack(rows, '2004-05'),
+        line: {color: '#7F7F7F'}
+      }
+
+      var data = [trace1,trace2];
+
+      var layout = {
+        title: 'Basic Time Series',
+      };
+
+      Plotly.newPlot('myDiv', data, layout);
+    })
+  </script>
+</body>
+</html>
