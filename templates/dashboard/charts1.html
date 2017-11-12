@@ -10,7 +10,7 @@
   <div id="myDiv"></div>
   <script>
     /* JAVASCRIPT CODE GOES HERE */
-    Plotly.d3.csv("../../static/data/rates.csv", function(err, rows){
+    Plotly.d3.csv("../../static/data/convertcsv.csv", function(err, rows){
 
       function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -20,7 +20,7 @@
         type: "scatter",
         mode: "lines",
         name: 'Rates 02-03',
-        x: unpack(rows, 'Commodities'),
+        x: unpack(rows, 'Year'),
         y: unpack(rows, '2002-03'),
         line: {color: '#17BECF'}
       }
@@ -29,7 +29,7 @@
         type: "scatter",
         mode: "lines",
         name: 'Rates 04-05',
-        x: unpack(rows, 'Commodities'),
+        x: unpack(rows, ''),
         y: unpack(rows, '2004-05'),
         line: {color: '#7F7F7F'}
       }
