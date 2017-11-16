@@ -48,7 +48,7 @@ def showcharts(request):
     schema = data.get("https://itsproject-server.herokuapp.com/crop/")
     with open('static/json/crop.json', 'w') as outfile:
         json.dump(schema, outfile)
-    return render(request,'dashboard/charts1.html')
+    return render(request,'dashboard/charts.html')
 
 #View for charts.
 #It requests data of all models except yield as it doesn't need it.
