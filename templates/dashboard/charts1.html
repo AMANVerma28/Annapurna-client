@@ -10,7 +10,7 @@
   <div id="myDiv"></div>
   <script>
     /* JAVASCRIPT CODE GOES HERE */
-    Plotly.d3.csv("../../static/data/rates.csv", function(err, rows){
+    Plotly.d3.csv("../../static/data/convertcsv.csv", function(err, rows){
 
       function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
@@ -19,25 +19,25 @@
       var trace1 = {
         type: "scatter",
         mode: "lines",
-        name: 'Rates 02-03',
-        x: unpack(rows, 'Commodities'),
-        y: unpack(rows, '2002-03'),
+        name: 'Wheat',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Wheat'),
         line: {color: '#17BECF'}
       }
 
       var trace2 = {
         type: "scatter",
         mode: "lines",
-        name: 'Rates 04-05',
-        x: unpack(rows, 'Commodities'),
-        y: unpack(rows, '2004-05'),
+        name: 'Jowar (Hybrid)',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Jowar (Hybrid)'),
         line: {color: '#7F7F7F'}
       }
 
       var data = [trace1,trace2];
 
       var layout = {
-        title: 'Basic Time Series',
+        title: 'Rate Comparison of different crops',
       };
 
       Plotly.newPlot('myDiv', data, layout);
