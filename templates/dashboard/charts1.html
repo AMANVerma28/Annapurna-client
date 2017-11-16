@@ -52,7 +52,43 @@
         line: {color: '#FF5533'}
       }
 
-      var data = [trace1,trace2,trace3,trace4];
+      var trace5 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Barley',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Barley'),
+        line: {color: '#17BECF'}
+      }
+
+      var trace6 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Gram',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Gram'),
+        line: {color: '#7F7F7F'}
+      }
+
+      var trace7 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Masur',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Masur'),
+        line: {color: '#33FF4C'}
+      }
+
+      var trace8 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Arhar',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Arhar'),
+        line: {color: '#FF5533'}
+      }
+
+      var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8];
 
       var layout = {
         title: 'Rate Comparison of different crops',
