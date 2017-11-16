@@ -34,7 +34,25 @@
         line: {color: '#7F7F7F'}
       }
 
-      var data = [trace1,trace2];
+      var trace3 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Wheat',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Wheat'),
+        line: {color: '#7F7F7F'}
+      }
+
+      var trace4 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Maize',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Maize'),
+        line: {color: '#7F7F7F'}
+      }
+
+      var data = [trace1,trace2,trace3,trace4];
 
       var layout = {
         title: 'Rate Comparison of different crops',
