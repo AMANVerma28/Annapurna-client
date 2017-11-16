@@ -10,7 +10,7 @@
   <div id="myDiv"></div>
   <script>
     /* JAVASCRIPT CODE GOES HERE */
-    Plotly.d3.csv("../../static/data/convertcsv.csv", function(err, rows){
+    Plotly.d3.csv("../../static/data/rates.csv", function(err, rows){
 
       function unpack(rows, key) {
         return rows.map(function(row) { return row[key]; });
