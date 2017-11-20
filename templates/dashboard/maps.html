@@ -397,6 +397,7 @@ function setMap(position) {
 <!-- Script for heatmap -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
+  var tata;
       google.charts.load('current', {
         'packages':['geochart'],
         // Note: you will need to get a mapsApiKey for your project.
@@ -410,6 +411,7 @@ function setMap(position) {
         $.getJSON( "../../static/data/state.json", function( datas ){
           //var array1 = JSON.parse(datas);
           console.log(datas);
+          tata = datas;
           var t=datas;
           console.log(t);
           var v = JSON.stringify(t);
