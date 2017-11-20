@@ -408,9 +408,9 @@ function setMap(position) {
       function drawRegionsMap() {
         console.log("Hello");
         $.getJSON( "../../static/data/state.json", function( datas ){
-          var array1 = JSON.parse(datas);
-          console.log(array1);
-          var data = google.visualization.arrayToDataTable(array1);
+          //var array1 = JSON.parse(datas);
+          //console.log(array1);
+          var data = google.visualization.arrayToDataTable(datas);
           /*
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
