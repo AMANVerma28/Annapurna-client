@@ -121,6 +121,8 @@
 </div>
         
 </body>
+
+
 <script src="{% static 'js/jquery.min.js' %}"></script>  
 <script>
     var slider = document.getElementById("myRange");
@@ -132,6 +134,8 @@
         output.innerHTML = this.value;
     }
 </script>
+
+<!-- Charts script -->
 <script type="text/javascript">
 demo = {
   initPickColor: function(){
@@ -148,7 +152,7 @@ demo = {
     });
   },
     
-  initChartist: function(year){    
+  initChartist: function(year){
     var crops=[]
     $.getJSON( "../../static/json/crop.json", function( datas ){ 
       var plot = []
@@ -198,17 +202,13 @@ demo = {
         Chartist.Bar('#chartActivity', data, options, responsiveOptions);
       });
     });
-          
-    var dataPreferences = {
-      series: [
-          [25, 30, 20, 25]
-      ]
-    };
   },
 }
 </script>
+<!-- End of pie chart js -->
 
 
+<!-- Income chart  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script type="text/javascript">
   var ctx = document.getElementById("myChart").getContext('2d');
