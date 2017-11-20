@@ -110,6 +110,9 @@
   <div class="container-fluid">
     <center>
       <div class="card">
+        <div class="header">
+          <h4>Household, Farms and Storage Info</h4>
+        </div>
         <div id="map" style="width:100%;height:600px;" class="col-sm-12"></div>
         <div class="footer">
           <div class="legend"></div>
@@ -139,11 +142,9 @@
 
   </div>
 </div>
-
-
-
 </body>
 
+<!-- JS for maps -->
 <script src="{% static 'js/jquery.min.js' %}"></script>  
 <script>
     var mapslider = document.getElementById("Range");
@@ -396,6 +397,8 @@ function setMap(position) {
         map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
 }
 </script> 
+<!-- Maps js ends here -->
+
 
 <!-- Script for heatmap -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
