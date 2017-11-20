@@ -398,6 +398,7 @@ function setMap(position) {
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
   var tata;
+  var maindat = [];
       google.charts.load('current', {
         'packages':['geochart'],
         // Note: you will need to get a mapsApiKey for your project.
@@ -416,11 +417,12 @@ function setMap(position) {
           // console.log(t);
           // var v = JSON.stringify(t);
           // var j = JSON.parse(v);
-          maindat = []
+          
           for(i in tata)
           {
             maindat.push(tata[i])
           }
+
           var data = google.visualization.arrayToDataTable(maindat);
           /*
           var data = google.visualization.arrayToDataTable([
