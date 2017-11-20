@@ -410,7 +410,8 @@ function setMap(position) {
         $.getJSON( "../../static/data/statewise.json", function( datas ){
           var array1 = jQuery.parseJSON(JSON.stringify(datas));
           console.log(array1);
-        });
+          var data = google.visualization.arrayToDataTable(array1);
+          /*
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
             ['Algeria', 36], ['Angola', -8], ['Benin', 6], ['Botswana', -24],
@@ -435,9 +436,10 @@ function setMap(position) {
             ['Uganda', 1], ['Western Sahara', 25], ['Zambia', -15],
             ['Zimbabwe', -18]
           ]);
+          */
 
           var options = {
-            region: '002', // Africa
+            region: 'IN', // Africa
             colorAxis: {colors: ['#00853f', 'black', '#e31b23']},
             backgroundColor: '#81d4fa',
             datalessRegionColor: '#f8bbd0',
@@ -446,6 +448,7 @@ function setMap(position) {
 
           var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
           chart.draw(data, options);
+        });
       };
     </script>
 
