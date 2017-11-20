@@ -1,0 +1,205 @@
+{
+   "ANDHRA PRADESH": {
+      "Total Cereals": 78.9,
+      "Total pulses": 1.3,
+      "Total Foodgrains": 57.7,
+      "Total Oil seeds": 20.7,
+      "Total area": 47.4
+   },
+   "ARUNACHAL PRADESH": {
+      "Total Cereals": 26.7,
+      "Total pulses": null,
+      "Total Foodgrains": 25.6,
+      "Total Oil seeds": null,
+      "Total area": 19
+   },
+   "ASSAM": {
+      "Total Cereals": 4.5,
+      "Total pulses": 2.8,
+      "Total Foodgrains": 4.5,
+      "Total Oil seeds": 14.1,
+      "Total area": 5.3
+   },
+   "BIHAR": {
+      "Total Cereals": 66.5,
+      "Total pulses": 2.8,
+      "Total Foodgrains": 60.7,
+      "Total Oil seeds": 39.5,
+      "Total area": 58.4
+   },
+   "CHHATTISGARH": {
+      "Total Cereals": 30.8,
+      "Total pulses": 5.8,
+      "Total Foodgrains": 26.3,
+      "Total Oil seeds": 5.8,
+      "Total area": 25.9
+   },
+   "GOA": {
+      "Total Cereals": 32.4,
+      "Total pulses": 0,
+      "Total Foodgrains": 26.4,
+      "Total Oil seeds": 10.5,
+      "Total area": 21.9
+   },
+   "GUJARAT": {
+      "Total Cereals": 47.2,
+      "Total pulses": 10.8,
+      "Total Foodgrains": 39.2,
+      "Total Oil seeds": 24.8,
+      "Total area": 39.5
+   },
+   "HARYANA": {
+      "Total Cereals": 89.3,
+      "Total pulses": 34.5,
+      "Total Foodgrains": 87.2,
+      "Total Oil seeds": 77.6,
+      "Total area": 85.4
+   },
+   "HIMACHAL  PRADESH": {
+      "Total Cereals": 19.2,
+      "Total pulses": 14.8,
+      "Total Foodgrains": 19,
+      "Total Oil seeds": 20.5,
+      "Total area": 19.3
+   },
+   "JAMMU & KASHMIR": {
+      "Total Cereals": 38.1,
+      "Total pulses": 12.2,
+      "Total Foodgrains": 37.3,
+      "Total Oil seeds": 68.8,
+      "Total area": 40.7
+   },
+   "JHARKHAND": {
+      "Total Cereals": 8.4,
+      "Total pulses": 2.1,
+      "Total Foodgrains": 7.4,
+      "Total Oil seeds": 8.7,
+      "Total area": 9.9
+   },
+   "KARNATAKA": {
+      "Total Cereals": 34.2,
+      "Total pulses": 6.4,
+      "Total Foodgrains": 25.5,
+      "Total Oil seeds": 23.5,
+      "Total area": 29
+   },
+   "KERALA": {
+      "Total Cereals": 64.9,
+      "Total pulses": null,
+      "Total Foodgrains": 63.3,
+      "Total Oil seeds": 20.2,
+      "Total area": 16.8
+   },
+   "MADHYA PRADESH": {
+      "Total Cereals": 47.8,
+      "Total pulses": 35.4,
+      "Total Foodgrains": 43.4,
+      "Total Oil seeds": 6.8,
+      "Total area": 32.5
+   },
+   "MAHARASHTRA": {
+      "Total Cereals": 20.7,
+      "Total pulses": 10.7,
+      "Total Foodgrains": 18,
+      "Total Oil seeds": 6.1,
+      "Total area": 19.7
+   },
+   "MANIPUR": {
+      "Total Cereals": 30.2,
+      "Total pulses": null,
+      "Total Foodgrains": 28.8,
+      "Total Oil seeds": null,
+      "Total area": 22.9
+   },
+   "MEGHALAYA": {
+      "Total Cereals": 32.8,
+      "Total pulses": null,
+      "Total Foodgrains": 31.9,
+      "Total Oil seeds": 28.9,
+      "Total area": 27.1
+   },
+   "MIZORAM": {
+      "Total Cereals": 24.1,
+      "Total pulses": null,
+      "Total Foodgrains": 22.3,
+      "Total Oil seeds": 45.5,
+      "Total area": 19.2
+   },
+   "NAGALAND": {
+      "Total Cereals": 25.8,
+      "Total pulses": null,
+      "Total Foodgrains": 22.5,
+      "Total Oil seeds": 53.6,
+      "Total area": 26.2
+   },
+   "ORISSA": {
+      "Total Cereals": 40,
+      "Total pulses": 8.3,
+      "Total Foodgrains": 32,
+      "Total Oil seeds": 14.8,
+      "Total area": 30.9
+   },
+   "PUNJAB": {
+      "Total Cereals": 97.7,
+      "Total pulses": 84.1,
+      "Total Foodgrains": 97.7,
+      "Total Oil seeds": 85.1,
+      "Total area": 97.2
+   },
+   "RAJASTHAN": {
+      "Total Cereals": 32.4,
+      "Total pulses": 14.1,
+      "Total Foodgrains": 27.8,
+      "Total Oil seeds": 66.7,
+      "Total area": 37
+   },
+   "SIKKIM": {
+      "Total Cereals": 13.3,
+      "Total pulses": null,
+      "Total Foodgrains": 12.1,
+      "Total Oil seeds": null,
+      "Total area": 9.4
+   },
+   "TAMIL NADU": {
+      "Total Cereals": 72.3,
+      "Total pulses": 4,
+      "Total Foodgrains": 60.7,
+      "Total Oil seeds": 52.3,
+      "Total area": 56.6
+   },
+   "TRIPURA": {
+      "Total Cereals": 40.6,
+      "Total pulses": 14,
+      "Total Foodgrains": 39.8,
+      "Total Oil seeds": 2.2,
+      "Total area": 36.5
+   },
+   "UTTARAKHAND": {
+      "Total Cereals": 42.2,
+      "Total pulses": 7.5,
+      "Total Foodgrains": 40.3,
+      "Total Oil seeds": 29.4,
+      "Total area": 45.7
+   },
+   "UTTAR PRADESH": {
+      "Total Cereals": 80.8,
+      "Total pulses": 24.9,
+      "Total Foodgrains": 73.2,
+      "Total Oil seeds": 53.1,
+      "Total area": 74.1
+   },
+   "WEST BENGAL": {
+      "Total Cereals": 49.5,
+      "Total pulses": 14.2,
+      "Total Foodgrains": 48.3,
+      "Total Oil seeds": 68.9,
+      "Total area": 56.4
+   },
+   "ALL INDIA": {
+      "Total Cereals": 53.7,
+      "Total pulses": 15.4,
+      "Total Foodgrains": 46.3,
+      "Total Oil seeds": 28.3,
+      "Total area": 44.3
+   }
+}
