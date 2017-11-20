@@ -409,7 +409,7 @@ function setMap(position) {
         $.getJSON( "../../static/data/statewiseland.csv", function( datas ){
           var array = JSON.parse(datas);
           console.log(array);
-        }
+        });
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
             ['Algeria', 36], ['Angola', -8], ['Benin', 6], ['Botswana', -24],
