@@ -409,6 +409,7 @@ function setMap(position) {
         $.getJSON( "../../static/data/statewiseland.csv", function( datas ){
           var array1 = JSON.parse(datas);
           console.log(array1);
+          console.log("Hello");
         });
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
