@@ -101,22 +101,24 @@
       <center>
         <div class="card " >
           <div class="header">
+            <h4>Crop Analysis</h4>
+          </div>
+            <div id="myDiv"></div>
+        </div>
+      </center>
+      
+
+      <!-- Third Chart -->
+      <center>
+        <div class="card " >
+          <div class="header">
             <h4>Household Analytics</h4>
           </div>
             <canvas id="myChart"></canvas>
         </div>
       </center>
 
-      <!-- Third Chart -->
-      <center>
-        <div class="card " >
-          <div class="header">
-            <h4>Crop Analysis</h4>
-          </div>
-            <div id="myDiv"></div>
-        </div>
-      </center>
-  
+
   </div>
 </div>
         
@@ -248,6 +250,7 @@ demo = {
   });
 </script>
 
+<!-- Plotly rate comparison js -->
 <script>
     /* JAVASCRIPT CODE GOES HERE */
     Plotly.d3.csv("../../static/data/convertcsv.csv", function(err, rows){
