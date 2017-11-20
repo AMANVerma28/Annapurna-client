@@ -45,22 +45,25 @@
           display: inline-block;
           text-align: left;
           vertical-align: middle;
-        } 
-      #legend {
-        font-family: Arial, sans-serif;
-        background: #fff;
-        padding: 10px;
-        margin: 10px;
-        border: 3px solid #000;
-      }
-      #legend h3 {
-        margin-top: 0;
-      }
-      #legend img {
-        vertical-align: middle;
-      }
+        }
 
-      .card {
+        #legend {
+          font-family: Arial, sans-serif;
+          background: #fff;
+          padding: 10px;
+          margin: 10px;
+          border: 3px solid #000;
+        }
+
+        #legend h3 {
+          margin-top: 0;
+        }
+
+        #legend img {
+          vertical-align: middle;
+        }
+
+        .card {
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           transition: 0.3s;
           width: 80%;
@@ -79,6 +82,7 @@
 
 <body>
 
+<!-- Modal div -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -87,12 +91,12 @@
         <h4 class="modal-title" id="exampleModalLabel">Farm Details</h4>
       </div>
       <div class="modal-body" >
-   <div class="container-fluid">
-    <div class="row">
-<div class="col-md-8" id="piechart"></div>
-<div class="col-md-4" id="farmdetails"></div>
-    </div>
-   </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8" id="piechart"></div>
+            <div class="col-md-4" id="farmdetails"></div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -100,7 +104,6 @@
     </div>
   </div>
 </div>
-
 
 <!-- Map div -->
 <div  class="content" style="z-index:-1">
@@ -128,6 +131,7 @@
 
 
 </body>
+
 <script src="{% static 'js/jquery.min.js' %}"></script>  
 <script>
     var mapslider = document.getElementById("Range");
@@ -398,6 +402,4 @@ function setMap(position) {
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="{% static 'js/light-bootstrap-dashboard.js'%}"></script>
-
-    </script>
 </html>
