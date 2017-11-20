@@ -1,254 +1,254 @@
 [
   {
-    "State Code": "IN-AP",
+    "State_Code": "IN-AP",
     "State": "ANDHRA PRADESH",
-    "Total Cereals": 78.9,
-    "Total pulses": 1.3,
-    "Total Foodgrains": 57.7,
-    "Total Oil seeds": 20.7,
-    "Total area": 47.4
+    "Total_Cereals": 78.9,
+    "Total_pulses": 1.3,
+    "Total_Foodgrains": 57.7,
+    "Total_Oilseeds": 20.7,
+    "Total_area": 47.4
   },
   {
-    "State Code": "IN-AR",
+    "State_Code": "IN-AR",
     "State": "ARUNACHAL PRADESH",
-    "Total Cereals": 26.7,
-    "Total pulses": "",
-    "Total Foodgrains": 25.6,
-    "Total Oil seeds": "",
-    "Total area": 19
+    "Total_Cereals": 26.7,
+    "Total_pulses": "",
+    "Total_Foodgrains": 25.6,
+    "Total_Oilseeds": "",
+    "Total_area": 19
   },
   {
-    "State Code": "IN-AS",
+    "State_Code": "IN-AS",
     "State": "ASSAM",
-    "Total Cereals": 4.5,
-    "Total pulses": 2.8,
-    "Total Foodgrains": 4.5,
-    "Total Oil seeds": 14.1,
-    "Total area": 5.3
+    "Total_Cereals": 4.5,
+    "Total_pulses": 2.8,
+    "Total_Foodgrains": 4.5,
+    "Total_Oilseeds": 14.1,
+    "Total_area": 5.3
   },
   {
-    "State Code": "IN-BR",
+    "State_Code": "IN-BR",
     "State": "BIHAR",
-    "Total Cereals": 66.5,
-    "Total pulses": 2.8,
-    "Total Foodgrains": 60.7,
-    "Total Oil seeds": 39.5,
-    "Total area": 58.4
+    "Total_Cereals": 66.5,
+    "Total_pulses": 2.8,
+    "Total_Foodgrains": 60.7,
+    "Total_Oilseeds": 39.5,
+    "Total_area": 58.4
   },
   {
-    "State Code": "IN-CG",
+    "State_Code": "IN-CG",
     "State": "CHHATTISGARH",
-    "Total Cereals": 30.8,
-    "Total pulses": 5.8,
-    "Total Foodgrains": 26.3,
-    "Total Oil seeds": 5.8,
-    "Total area": 25.9
+    "Total_Cereals": 30.8,
+    "Total_pulses": 5.8,
+    "Total_Foodgrains": 26.3,
+    "Total_Oilseeds": 5.8,
+    "Total_area": 25.9
   },
   {
-    "State Code": "IN-GA",
+    "State_Code": "IN-GA",
     "State": "GOA",
-    "Total Cereals": 32.4,
-    "Total pulses": 0,
-    "Total Foodgrains": 26.4,
-    "Total Oil seeds": 10.5,
-    "Total area": 21.9
+    "Total_Cereals": 32.4,
+    "Total_pulses": 0,
+    "Total_Foodgrains": 26.4,
+    "Total_Oilseeds": 10.5,
+    "Total_area": 21.9
   },
   {
-    "State Code": "IN-GJ",
+    "State_Code": "IN-GJ",
     "State": "GUJARAT",
-    "Total Cereals": 47.2,
-    "Total pulses": 10.8,
-    "Total Foodgrains": 39.2,
-    "Total Oil seeds": 24.8,
-    "Total area": 39.5
+    "Total_Cereals": 47.2,
+    "Total_pulses": 10.8,
+    "Total_Foodgrains": 39.2,
+    "Total_Oilseeds": 24.8,
+    "Total_area": 39.5
   },
   {
-    "State Code": "IN-HR",
+    "State_Code": "IN-HR",
     "State": "HARYANA",
-    "Total Cereals": 89.3,
-    "Total pulses": 34.5,
-    "Total Foodgrains": 87.2,
-    "Total Oil seeds": 77.6,
-    "Total area": 85.4
+    "Total_Cereals": 89.3,
+    "Total_pulses": 34.5,
+    "Total_Foodgrains": 87.2,
+    "Total_Oilseeds": 77.6,
+    "Total_area": 85.4
   },
   {
-    "State Code": "IN-HP",
+    "State_Code": "IN-HP",
     "State": "HIMACHAL  PRADESH",
-    "Total Cereals": 19.2,
-    "Total pulses": 14.8,
-    "Total Foodgrains": 19,
-    "Total Oil seeds": 20.5,
-    "Total area": 19.3
+    "Total_Cereals": 19.2,
+    "Total_pulses": 14.8,
+    "Total_Foodgrains": 19,
+    "Total_Oilseeds": 20.5,
+    "Total_area": 19.3
   },
   {
-    "State Code": "IN-JK",
+    "State_Code": "IN-JK",
     "State": "JAMMU & KASHMIR",
-    "Total Cereals": 38.1,
-    "Total pulses": 12.2,
-    "Total Foodgrains": 37.3,
-    "Total Oil seeds": 68.8,
-    "Total area": 40.7
+    "Total_Cereals": 38.1,
+    "Total_pulses": 12.2,
+    "Total_Foodgrains": 37.3,
+    "Total_Oilseeds": 68.8,
+    "Total_area": 40.7
   },
   {
-    "State Code": "IN-JH",
+    "State_Code": "IN-JH",
     "State": "JHARKHAND",
-    "Total Cereals": 8.4,
-    "Total pulses": 2.1,
-    "Total Foodgrains": 7.4,
-    "Total Oil seeds": 8.7,
-    "Total area": 9.9
+    "Total_Cereals": 8.4,
+    "Total_pulses": 2.1,
+    "Total_Foodgrains": 7.4,
+    "Total_Oilseeds": 8.7,
+    "Total_area": 9.9
   },
   {
-    "State Code": "IN-KA",
+    "State_Code": "IN-KA",
     "State": "KARNATAKA",
-    "Total Cereals": 34.2,
-    "Total pulses": 6.4,
-    "Total Foodgrains": 25.5,
-    "Total Oil seeds": 23.5,
-    "Total area": 29
+    "Total_Cereals": 34.2,
+    "Total_pulses": 6.4,
+    "Total_Foodgrains": 25.5,
+    "Total_Oilseeds": 23.5,
+    "Total_area": 29
   },
   {
-    "State Code": "IN-KL",
+    "State_Code": "IN-KL",
     "State": "KERALA",
-    "Total Cereals": 64.9,
-    "Total pulses": "",
-    "Total Foodgrains": 63.3,
-    "Total Oil seeds": 20.2,
-    "Total area": 16.8
+    "Total_Cereals": 64.9,
+    "Total_pulses": "",
+    "Total_Foodgrains": 63.3,
+    "Total_Oilseeds": 20.2,
+    "Total_area": 16.8
   },
   {
-    "State Code": "IN-MP",
+    "State_Code": "IN-MP",
     "State": "MADHYA PRADESH",
-    "Total Cereals": 47.8,
-    "Total pulses": 35.4,
-    "Total Foodgrains": 43.4,
-    "Total Oil seeds": 6.8,
-    "Total area": 32.5
+    "Total_Cereals": 47.8,
+    "Total_pulses": 35.4,
+    "Total_Foodgrains": 43.4,
+    "Total_Oilseeds": 6.8,
+    "Total_area": 32.5
   },
   {
-    "State Code": "IN-MH",
+    "State_Code": "IN-MH",
     "State": "MAHARASHTRA",
-    "Total Cereals": 20.7,
-    "Total pulses": 10.7,
-    "Total Foodgrains": 18,
-    "Total Oil seeds": 6.1,
-    "Total area": 19.7
+    "Total_Cereals": 20.7,
+    "Total_pulses": 10.7,
+    "Total_Foodgrains": 18,
+    "Total_Oilseeds": 6.1,
+    "Total_area": 19.7
   },
   {
-    "State Code": "IN-MN",
+    "State_Code": "IN-MN",
     "State": "MANIPUR",
-    "Total Cereals": 30.2,
-    "Total pulses": "",
-    "Total Foodgrains": 28.8,
-    "Total Oil seeds": "",
-    "Total area": 22.9
+    "Total_Cereals": 30.2,
+    "Total_pulses": "",
+    "Total_Foodgrains": 28.8,
+    "Total_Oilseeds": "",
+    "Total_area": 22.9
   },
   {
-    "State Code": "IN-ML",
+    "State_Code": "IN-ML",
     "State": "MEGHALAYA",
-    "Total Cereals": 32.8,
-    "Total pulses": "",
-    "Total Foodgrains": 31.9,
-    "Total Oil seeds": 28.9,
-    "Total area": 27.1
+    "Total_Cereals": 32.8,
+    "Total_pulses": "",
+    "Total_Foodgrains": 31.9,
+    "Total_Oilseeds": 28.9,
+    "Total_area": 27.1
   },
   {
-    "State Code": "IN-MZ",
+    "State_Code": "IN-MZ",
     "State": "MIZORAM",
-    "Total Cereals": 24.1,
-    "Total pulses": "",
-    "Total Foodgrains": 22.3,
-    "Total Oil seeds": 45.5,
-    "Total area": 19.2
+    "Total_Cereals": 24.1,
+    "Total_pulses": "",
+    "Total_Foodgrains": 22.3,
+    "Total_Oilseeds": 45.5,
+    "Total_area": 19.2
   },
   {
-    "State Code": "IN-NL",
+    "State_Code": "IN-NL",
     "State": "NAGALAND",
-    "Total Cereals": 25.8,
-    "Total pulses": "",
-    "Total Foodgrains": 22.5,
-    "Total Oil seeds": 53.6,
-    "Total area": 26.2
+    "Total_Cereals": 25.8,
+    "Total_pulses": "",
+    "Total_Foodgrains": 22.5,
+    "Total_Oilseeds": 53.6,
+    "Total_area": 26.2
   },
   {
-    "State Code": "IN-OR",
+    "State_Code": "IN-OR",
     "State": "ORISSA",
-    "Total Cereals": 40,
-    "Total pulses": 8.3,
-    "Total Foodgrains": 32,
-    "Total Oil seeds": 14.8,
-    "Total area": 30.9
+    "Total_Cereals": 40,
+    "Total_pulses": 8.3,
+    "Total_Foodgrains": 32,
+    "Total_Oilseeds": 14.8,
+    "Total_area": 30.9
   },
   {
-    "State Code": "IN-PB",
+    "State_Code": "IN-PB",
     "State": "PUNJAB",
-    "Total Cereals": 97.7,
-    "Total pulses": 84.1,
-    "Total Foodgrains": 97.7,
-    "Total Oil seeds": 85.1,
-    "Total area": 97.2
+    "Total_Cereals": 97.7,
+    "Total_pulses": 84.1,
+    "Total_Foodgrains": 97.7,
+    "Total_Oilseeds": 85.1,
+    "Total_area": 97.2
   },
   {
-    "State Code": "IN-RJ",
+    "State_Code": "IN-RJ",
     "State": "RAJASTHAN",
-    "Total Cereals": 32.4,
-    "Total pulses": 14.1,
-    "Total Foodgrains": 27.8,
-    "Total Oil seeds": 66.7,
-    "Total area": 37
+    "Total_Cereals": 32.4,
+    "Total_pulses": 14.1,
+    "Total_Foodgrains": 27.8,
+    "Total_Oilseeds": 66.7,
+    "Total_area": 37
   },
   {
-    "State Code": "IN-SK",
+    "State_Code": "IN-SK",
     "State": "SIKKIM",
-    "Total Cereals": 13.3,
-    "Total pulses": "",
-    "Total Foodgrains": 12.1,
-    "Total Oil seeds": "",
-    "Total area": 9.4
+    "Total_Cereals": 13.3,
+    "Total_pulses": "",
+    "Total_Foodgrains": 12.1,
+    "Total_Oilseeds": "",
+    "Total_area": 9.4
   },
   {
-    "State Code": "IN-TN",
+    "State_Code": "IN-TN",
     "State": "TAMIL NADU",
-    "Total Cereals": 72.3,
-    "Total pulses": 4,
-    "Total Foodgrains": 60.7,
-    "Total Oil seeds": 52.3,
-    "Total area": 56.6
+    "Total_Cereals": 72.3,
+    "Total_pulses": 4,
+    "Total_Foodgrains": 60.7,
+    "Total_Oilseeds": 52.3,
+    "Total_area": 56.6
   },
   {
-    "State Code": "IN-TR",
+    "State_Code": "IN-TR",
     "State": "TRIPURA",
-    "Total Cereals": 40.6,
-    "Total pulses": 14,
-    "Total Foodgrains": 39.8,
-    "Total Oil seeds": 2.2,
-    "Total area": 36.5
+    "Total_Cereals": 40.6,
+    "Total_pulses": 14,
+    "Total_Foodgrains": 39.8,
+    "Total_Oilseeds": 2.2,
+    "Total_area": 36.5
   },
   {
-    "State Code": "IN-UT",
+    "State_Code": "IN-UT",
     "State": "UTTARAKHAND",
-    "Total Cereals": 42.2,
-    "Total pulses": 7.5,
-    "Total Foodgrains": 40.3,
-    "Total Oil seeds": 29.4,
-    "Total area": 45.7
+    "Total_Cereals": 42.2,
+    "Total_pulses": 7.5,
+    "Total_Foodgrains": 40.3,
+    "Total_Oilseeds": 29.4,
+    "Total_area": 45.7
   },
   {
-    "State Code": "IN-UP",
-    "Total Cereals": 80.8,
+    "State_Code": "IN-UP",
+    "Total_Cereals": 80.8,
     "State": "UTTAR PRADESH",
-    "Total pulses": 24.9,
-    "Total Foodgrains": 73.2,
-    "Total Oil seeds": 53.1,
-    "Total area": 74.1
+    "Total_pulses": 24.9,
+    "Total_Foodgrains": 73.2,
+    "Total_Oilseeds": 53.1,
+    "Total_area": 74.1
   },
   {
-    "State Code": "IN-WB",
+    "State_Code": "IN-WB",
     "State": "WEST BENGAL",
-    "Total Cereals": 49.5,
-    "Total pulses": 14.2,
-    "Total Foodgrains": 48.3,
-    "Total Oil seeds": 68.9,
-    "Total area": 56.4
+    "Total_Cereals": 49.5,
+    "Total_pulses": 14.2,
+    "Total_Foodgrains": 48.3,
+    "Total_Oilseeds": 68.9,
+    "Total_area": 56.4
   }
 ]
