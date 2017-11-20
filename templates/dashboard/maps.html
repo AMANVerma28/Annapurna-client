@@ -406,11 +406,10 @@ function setMap(position) {
       google.charts.setOnLoadCallback(drawRegionsMap);
 
       function drawRegionsMap() {
-        console.log("ello");
-        $.getJSON( "../../static/data/statewiseland.csv", function( datas ){
+        console.log("Hello");
+        $.getJSON( "../../static/data/state.json", function( datas ){
           var array1 = JSON.parse(datas);
           console.log(array1);
-          console.log("Hello");
         });
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
@@ -446,7 +445,6 @@ function setMap(position) {
           };
 
           var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
-          console.log("Hello1");
           chart.draw(data, options);
       };
     </script>
