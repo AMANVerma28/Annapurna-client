@@ -409,7 +409,7 @@ function setMap(position) {
         console.log("Hello");
         $.getJSON( "../../static/data/state.json", function( datas ){
           //var array1 = JSON.parse(datas);
-          //console.log(array1);
+          console.log(datas);
           var data = google.visualization.arrayToDataTable(JSON.parse(datas));
           /*
           var data = google.visualization.arrayToDataTable([
