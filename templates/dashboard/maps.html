@@ -59,22 +59,6 @@
       #legend img {
         vertical-align: middle;
       }
-
-      .card {
-          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-          transition: 0.3s;
-          width: 80%;
-          height: 600px;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-
-        .container {
-            padding: 2px 16px;
-        }
-
     </style>
 </head>
 
@@ -102,10 +86,13 @@
   </div>
 </div>
 
-    <center>
+<div  class="content" style="z-index:-1">
+  <div class="container-fluid">
+    <div class="row ">
       <div class="card ">
-        <div id="map"></div>
+        <div id="map" style="width:100%;height:800px;"class="col-sm-12"></div>
         <div class="footer">
+          <div class="legend"></div>
           <div id="slidecontainer" >
             <input type="range" min="2005" max="2017" style="width:100%" value="2017" class="slider" id="Range">
             <p>Year: <span id="value"></span></p>
@@ -117,8 +104,10 @@
           </select>                     
         </div>
       </div>
-      <div id="legend"><h3>Legend</h3></div>
-    </center>
+    </div>
+    <div id="legend"><h3>Legend</h3></div>
+  </div>
+</div>
 </body>
 <script src="{% static 'js/jquery.min.js' %}"></script>  
 <script>
