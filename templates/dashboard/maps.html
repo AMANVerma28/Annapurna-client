@@ -412,12 +412,16 @@ function setMap(position) {
           //var array1 = JSON.parse(datas);
           console.log(datas);
           tata = datas;
-          var t=datas;
-          console.log(t);
-          var v = JSON.stringify(t);
-          var j = JSON.parse(v);
-
-          var data = google.visualization.arrayToDataTable(JSON.parse(j));
+          // var t=datas;
+          // console.log(t);
+          // var v = JSON.stringify(t);
+          // var j = JSON.parse(v);
+          maindat = []
+          for(i in tata)
+          {
+            maindat.push(tata[i])
+          }
+          var data = google.visualization.arrayToDataTable(maindat);
           /*
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
