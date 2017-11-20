@@ -73,7 +73,7 @@
         .container {
             padding: 2px 16px;
         }
-        
+
     </style>
 </head>
 
@@ -228,7 +228,7 @@ function hi(farm){
 function setMap(position) {
   var myCenter = new google.maps.LatLng(13.541469,79.048655);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 14, mapTypeId: 'terrain'};
+  var mapOptions = {center: myCenter, zoom: 10, mapTypeId: 'terrain'};
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var srcImage = 'https://developers.google.com/maps/documentation/' +
     'javascript/examples/full/images/talkeetna.png';
@@ -263,7 +263,7 @@ function setMap(position) {
         });
         google.maps.event.addListener(marker, 'mouseover', (function(marker, row) {
           return function() {
-            infowindow.setContent("<b>Owner : </b>"+data[row].owner_name + "<b>members : </b>"+data[row].number_of_member+ "<br><br>"+"<b>income :</b> "+data[row].monthly_income+ "<br><br>" +'<img src="https://itsproject-server.herokuapp.com'+data[row].image+'">');
+            infowindow.setContent("<b>Owner : </b>"+data[row].owner_name + "<br> <br>" + "<b>members : </b>"+data[row].number_of_member+ "<br><br>"+"<b>income :</b> "+data[row].monthly_income+ "<br><br>" +'<img src="https://itsproject-server.herokuapp.com'+data[row].image+'">');
             infowindow.open(map, marker);
           }
         }
@@ -377,7 +377,7 @@ function setMap(position) {
           legend.appendChild(div);
         }
 
-        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
+        map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(legend);
 }
 </script> 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
