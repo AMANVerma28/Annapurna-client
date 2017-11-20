@@ -407,8 +407,8 @@ function setMap(position) {
 
       function drawRegionsMap() {
         $.getJSON( "../../static/data/statewiseland.csv", function( datas ){
-          var array = JSON.parse(datas);
-          console.log(array);
+          var array1 = JSON.parse(datas);
+          console.log(array1);
         });
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
