@@ -27,6 +27,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="{% static 'css/pe-icon-7-stroke.css'%}" rel="stylesheet" />
 
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
     <style>
         .modal {
             text-align: center;
@@ -50,14 +52,30 @@
           height : 400px;
           width : 100%;
         }
+
+        .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
     </style>
 </head>
 
 <body>
 <div  class="content" style="z-index:-1">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12" >
+    
+    <!-- First Chart -->
+    <center>
         <div class="card " >
           <div class="header">
             <h4 class="title"><p id="demo"></p> Crop Yield</h4>
@@ -77,25 +95,31 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+      </center>
 
-<div  class="content" style="z-index:-1">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12" >
+      <!-- Second Chart -->
+      <center>
         <div class="card " >
           <div class="header">
             <h4>Household Analytics</h4>
           </div>
-            <canvas id="myChart"></canvas>
+            <div id="myChart" style="width:100%"></div>
         </div>
-      </div>
-    </div>
+      </center>
+
+      <!-- Third Chart -->
+      <center>
+        <div class="card " >
+          <div class="header">
+            <h4>Crop Analysis</h4>
+          </div>
+            <div id="myDiv"></div>
+        </div>
+      </center>
+  
   </div>
 </div>
+        
 </body>
 <script src="{% static 'js/jquery.min.js' %}"></script>  
 <script>
@@ -183,6 +207,8 @@ demo = {
   },
 }
 </script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script type="text/javascript">
   var ctx = document.getElementById("myChart").getContext('2d');
@@ -221,6 +247,98 @@ demo = {
     }
   });
 </script>
+
+<script>
+    /* JAVASCRIPT CODE GOES HERE */
+    Plotly.d3.csv("../../static/data/convertcsv.csv", function(err, rows){
+
+      function unpack(rows, key) {
+        return rows.map(function(row) { return row[key]; });
+      }
+
+      var trace1 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Ragi',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Ragi'),
+        line: {color: '#17BECF'}
+      }
+
+      var trace2 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Jowar (Hybrid)',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Jowar1'),
+        line: {color: '#7F7F7F'}
+      }
+
+      var trace3 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Wheat',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Wheat'),
+        line: {color: '#33FF4C'}
+      }
+
+      var trace4 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Maize',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Maize'),
+        line: {color: '#FF5533'}
+      }
+
+      var trace5 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Barley',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Barley'),
+        line: {color: '#F8CCC4'}
+      }
+
+      var trace6 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Gram',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Gram'),
+        line: {color: '#A26222'}
+      }
+
+      var trace7 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Masur',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Masur'),
+        line: {color: '#B0A829'}
+      }
+
+      var trace8 = {
+        type: "scatter",
+        mode: "lines",
+        name: 'Arhar',
+        x: unpack(rows, 'Years'),
+        y: unpack(rows, 'Arhar'),
+        line: {color: '#29B050'}
+      }
+
+      var data = [trace1,trace2,trace3,trace4,trace5,trace6,trace7,trace8];
+
+      var layout = {
+        title: 'Rate Comparison of different crops',
+      };
+
+      Plotly.newPlot('myDiv', data, layout);
+    })
+  </script>
+
+
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!--   Core JS Files   -->
