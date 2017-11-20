@@ -418,7 +418,7 @@ function setMap(position) {
           var data = google.visualization.arrayToDataTable([
             ["State Code","State","Total area"],
             ["IN-AP","ANDHRA PRADESH",47.4], ["IN-AR","ARUNACHAL PRADESH",19], ["IN-AS","ASSAM",5.3], ["IN-BR","BIHAR",58.4],
-            ["IN-CH","CHHATTISGARH",25.9], ["IN-GA","GOA",21.9], ["IN-GJ","GUJARAT",39.5],
+            ["IN-CT","CHHATTISGARH",25.9], ["IN-GA","GOA",21.9], ["IN-GJ","GUJARAT",39.5],
             ["IN-HR","HARYANA",85.4], ["IN-HP","HIMACHAL PRADESH",19.3],
             ["IN-JK","JAMMU & KASHMIR",40.7], ["IN-JH","JHARKHAND",9.9], ["IN-KA","KARNATAKA",29],
             ["IN-KL","KERALA",16.8], ["IN-MP","MADHYA PRADESH",32.5],
@@ -433,10 +433,10 @@ function setMap(position) {
             region: 'IN', 
             displayMode: 'regions',
             resolution: 'provinces',
-            colorAxis: {colors: ['#00853f', 'black', '#e31b23']},
-            backgroundColor: '#81d4fa',
+            //colorAxis: {colors: ['#00853f', 'black', '#e31b23']},
+            //backgroundColor: '#81d4fa',
             //datalessRegionColor: '#f8bbd0',
-            defaultColor: '#f5f5f5',
+            //defaultColor: '#f5f5f5',
           };
 
           var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
