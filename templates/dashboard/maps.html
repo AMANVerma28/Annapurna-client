@@ -397,8 +397,6 @@ function setMap(position) {
 <!-- Script for heatmap -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
-  var tata;
-  var maindat = [];
       google.charts.load('current', {
         'packages':['geochart'],
         // Note: you will need to get a mapsApiKey for your project.
@@ -417,39 +415,19 @@ function setMap(position) {
           // console.log(t);
           // var v = JSON.stringify(t);
           // var j = JSON.parse(v);
-          
-          for(i in tata)
-          {
-            maindat.push(tata[i])
-          }
-
-          var data = google.visualization.arrayToDataTable(maindat);
-          /*
           var data = google.visualization.arrayToDataTable([
-            ['Country',   'Latitude'],
-            ['Algeria', 36], ['Angola', -8], ['Benin', 6], ['Botswana', -24],
-            ['Burkina Faso', 12], ['Burundi', -3], ['Cameroon', 3],
-            ['Canary Islands', 28], ['Cape Verde', 15],
-            ['Central African Republic', 4], ['Ceuta', 35], ['Chad', 12],
-            ['Comoros', -12], ['Cote d\'Ivoire', 6],
-            ['Democratic Republic of the Congo', -3], ['Djibouti', 12],
-            ['Egypt', 26], ['Equatorial Guinea', 3], ['Eritrea', 15],
-            ['Ethiopia', 9], ['Gabon', 0], ['Gambia', 13], ['Ghana', 5],
-            ['Guinea', 10], ['Guinea-Bissau', 12], ['Kenya', -1],
-            ['Lesotho', -29], ['Liberia', 6], ['Libya', 32], ['Madagascar', null],
-            ['Madeira', 33], ['Malawi', -14], ['Mali', 12], ['Mauritania', 18],
-            ['Mauritius', -20], ['Mayotte', -13], ['Melilla', 35],
-            ['Morocco', 32], ['Mozambique', -25], ['Namibia', -22],
-            ['Niger', 14], ['Nigeria', 8], ['Republic of the Congo', -1],
-            ['Réunion', -21], ['Rwanda', -2], ['Saint Helena', -16],
-            ['São Tomé and Principe', 0], ['Senegal', 15],
-            ['Seychelles', -5], ['Sierra Leone', 8], ['Somalia', 2],
-            ['Sudan', 15], ['South Africa', -30], ['South Sudan', 5],
-            ['Swaziland', -26], ['Tanzania', -6], ['Togo', 6], ['Tunisia', 34],
-            ['Uganda', 1], ['Western Sahara', 25], ['Zambia', -15],
-            ['Zimbabwe', -18]
+            ["State Code","State","Total Cereals","Total pulses","Total Foodgrains","Total Oilseeds","Total area"],
+            ["IN-AP","ANDHRA PRADESH",78.9,1.3,57.7,20.7,47.4], ["IN-AR","ARUNACHAL PRADESH",26.7,,25.6,,19], ["IN-AS","ASSAM",4.5,2.8,4.5,14.1,5.3], ["IN-BR","BIHAR",66.5,2.8,60.7,39.5,58.4],
+            ["IN-CG","CHHATTISGARH",30.8,5.8,26.3,5.8,25.9], ["IN-GA","GOA",32.4,0,26.4,10.5,21.9], ["IN-GJ","GUJARAT",47.2,10.8,39.2,24.8,39.5],
+            ["IN-HR","HARYANA",89.3,34.5,87.2,77.6,85.4], ["IN-HP","HIMACHAL PRADESH",19.2,14.8,19,20.5,19.3],
+            ["IN-JK","JAMMU & KASHMIR",38.1,12.2,37.3,68.8,40.7], ["IN-JH","JHARKHAND",8.4,2.1,7.4,8.7,9.9], ["IN-KA","KARNATAKA",34.2,6.4,25.5,23.5,29],
+            ["IN-KL","KERALA",64.9,,63.3,20.2,16.8], ["IN-MP","MADHYA PRADESH",47.8,35.4,43.4,6.8,32.5],
+            ["IN-MH","MAHARASHTRA",20.7,10.7,18,6.1,19.7], ["IN-MN","MANIPUR",30.2,,28.8,,22.9],
+            ["IN-ML","MEGHALAYA",32.8,,31.9,28.9,27.1], ["IN-MZ","MIZORAM",24.1,,22.3,45.5,19.2], ["IN-NL","NAGALAND",25.8,,22.5,53.6,26.2],
+            ["IN-OR","ORISSA",40,8.3,32,14.8,30.9], ["IN-PB","PUNJAB",97.7,84.1,97.7,85.1,97.2], ["IN-RJ","RAJASTHAN",32.4,14.1,27.8,66.7,37], ["IN-SK","SIKKIM",13.3,,12.1,,9.4],
+            ["IN-TN","TAMIL NADU",72.3,4,60.7,52.3,56.6], ["IN-TR","TRIPURA",40.6,14,39.8,2.2,36.5], ["IN-UT","UTTARAKHAND",42.2,7.5,40.3,29.4,45.7],
+            ["IN-UP","UTTAR PRADESH",80.8,24.9,73.2,53.1,74.1], ["IN-WB","WEST BENGAL",49.5,14.2,48.3,68.9,56.4]
           ]);
-          */
 
           var options = {
             region: 'IN', // Africa
