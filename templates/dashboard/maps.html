@@ -404,8 +404,9 @@ function setMap(position) {
         'mapsApiKey': 'AIzaSyCp8LvJ0F70f6K57rvaxrSBFBpff7hWIAI'
       });
       google.charts.setOnLoadCallback(drawRegionsMap);
-      console.log("ello");
+
       function drawRegionsMap() {
+        console.log("ello");
         $.getJSON( "../../static/data/statewiseland.csv", function( datas ){
           var array1 = JSON.parse(datas);
           console.log(array1);
