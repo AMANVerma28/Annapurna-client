@@ -413,8 +413,9 @@ function setMap(position) {
           var t=datas;
           console.log(t);
           var v = JSON.stringify(t);
+          var j = JSON.parse(v);
 
-          var data = google.visualization.arrayToDataTable(JSON.parse(v));
+          var data = google.visualization.arrayToDataTable(JSON.parse(j));
           /*
           var data = google.visualization.arrayToDataTable([
             ['Country',   'Latitude'],
