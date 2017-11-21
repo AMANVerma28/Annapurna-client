@@ -47,7 +47,7 @@ def showmaps(request):
     schema = data.get("https://itsproject-server.herokuapp.com/storage/")
     with open('static/json/storage.json', 'w') as outfile:
         json.dump(schema, outfile)
-    return render(request,'dashboard/maps.html')
+    return render(request,'dashboard/finalmap.html')
 
 #View for charts.
 #It requests data of just well model as it doesn't need others.
