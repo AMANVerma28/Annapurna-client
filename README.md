@@ -1,6 +1,6 @@
 # itsclient
 
-Run the client on "http://https://annapurnahelps.herokuapp.com" on IIITS Server.
+Run the client on "http://https://annapurnahelps.herokuapp.com".
 
 To run on IIITS Server follow the given procedure.
 1. Login into "10.0.3.23" container.
