@@ -11,7 +11,7 @@ django-rest==0.0.1
 djangorestframework==3.6.4
 djangorestframework-gis==0.11.2
 gunicorn==19.7.1
-httpie==0.9.9
+httpie==1.0.3
 idna==2.6
 itypes==1.1.0
 Jinja2==2.9.6
